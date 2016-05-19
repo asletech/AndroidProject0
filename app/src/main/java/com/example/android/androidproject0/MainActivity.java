@@ -10,6 +10,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private static final String BUTTON_TEXT_PREFIX = "This button will launch my ";
     private static final String BUTTON_TEXT_SUFFIX =  " app!";
+    private static final String HELP_TEXT = "Please Click a Button";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             buttonText = BUTTON_TEXT_PREFIX + buttonText + BUTTON_TEXT_SUFFIX;
             Toast.makeText(MainActivity.this, buttonText, Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(MainActivity.this, "Please Click a Button", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this,HELP_TEXT , Toast.LENGTH_SHORT).show();
         }
     }
 }
